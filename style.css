@@ -1,0 +1,10 @@
+html {
+    background-color: #999797;
+}
+body {
+    max-width: 63.75rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border-radius: 0.35rem;
+}
