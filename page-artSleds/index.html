@@ -21,20 +21,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="container">
+    <header class="container flex header">
       <div class="logo">
         <a href=""><img src="./assets/images/logo.svg" alt=""></a>
       </div>
-      <nav class="nav"></nav>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">New</a></li>
-        <li><a href="">Popular</a></li>
-        <li><a href="">Trending</a></li>
-        <li><a href="">Categories</a></li>
-      </ul>
+      <nav class="nav">
+        <ul class=" flex nav-item">
+          <li><a href="">Home</a></li>
+          <li><a href="">New</a></li>
+          <li><a href="">Popular</a></li>
+          <li><a href="">Trending</a></li>
+          <li><a href="">Categories</a></li>
+        </ul>
+      </nav>
     </header>
-    <main class="container">
+    <main class="flex container main">
       <div class="heroes-section">
         <img src="./assets/images/image-web-3-desktop.jpg" alt="">
         <h1>The Bright Future of Web 3.0?</h1>
@@ -44,9 +45,10 @@
           promise?</p>
         <button class="button">Read more</button>
       </div>
-      <aside>
-        <h2>New</h2>
+      <aside class="aside">
+        
         <div class="roster">
+          <h2>New</h2>
           <ul>
             <li><a href="#" class="h3">Hydrogen VS Electric Cars</a>
             <p>Will hydrogen-fueled cars
@@ -58,7 +60,7 @@
           </ul>
         </div>
       </aside>
-      <div class="lasts-section">
+      <div class="lasts-section flex">
         <div class="lasts-item">
           <div class="img"><img src="./assets/images/image-retro-pcs.jpg" alt=""></div>
           <div class="content">
