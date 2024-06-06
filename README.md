@@ -1,12 +1,13 @@
 # one-app
+Подивитись нa сторінку тренувального бейза [TYT](https://666158c256158457666a48b1--singular-rugelach-45b4d0.netlify.app/)
 ## Первые шаги:
- - [ ] Установите веб-браузер (например, Google Chrome, Mozilla Firefox или Microsoft Edge) для тестирования и выполнения JavaScript кода.
+ - [x] Установите веб-браузер (например, Google Chrome, Mozilla Firefox или Microsoft Edge) для тестирования и выполнения JavaScript кода.
 
-- [ ] Выберите редактор кода (например, Visual Studio Code, Sublime Text или Atom), чтобы удобно писать и редактировать свой код.
+- [x] Выберите редактор кода (например, Visual Studio Code, Sublime Text или Atom), чтобы удобно писать и редактировать свой код.
 
+- [ ] Робота с GitHub  
 ## Основные концепции языка:
- - Изучите основы JavaScript:
-  
+ - Изучите основы JavaScript: 
     - [ ] переменные, 
     - [ ] операторы, 
     - [ ] условия, 
