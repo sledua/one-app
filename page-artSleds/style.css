@@ -160,7 +160,7 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 1rem;
+  padding: 2rem 0rem 1rem;
 }
 h1,
 h2,
@@ -173,7 +173,6 @@ h3 {
 .header {
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid green;
 }
 .nav-item {
   padding: 0;
@@ -192,25 +191,42 @@ h3 {
 }
 
 .main {
-  flex-wrap: wrap;
-  /* gap: 15px 10px; */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: 
+  "heroes aside"
+  "last last";
+  column-gap: .9375rem;
+  row-gap: 1.5625rem;
+  padding: 0;
+
 }
 .heroes-section {
-  flex: 1 65%;
-  order: 1;
-  flex-grow: 1;
+  grid-area: heroes;
+}
+.heroes-content {
+  display: flex;
+}
+.heroes-content > h1 {
+  font-size: 5rem;
+  font-weight: var(--font-w-800);
+  margin: 3.3125rem 0;
+}
+.heroes-content_body {
+  margin: 3.3125rem 0;
 }
 .aside {
-  flex: 35%;
-  order: 2;
-  flex-grow: 4;
+  grid-area: aside;
+  display: contents;
 }
 .roster {
-  height: 100%;
-  margin: 0 0 0 1rem;
   background-color: var(--color-neutral-dark-blue);
+  color: var(--color-neutral-Off-white);
 }
 .lasts-section {
-  flex: 1 100%;
-  order: 3;
+  grid-area: last;
+}
+.lasts-item {
+  display: inherit;
 }
