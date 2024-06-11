@@ -185,6 +185,7 @@ h3 {
   text-decoration: none;
   font-weight: var(--font-w-400);
   color: var(--color-neutral-dark-gayish-blue);
+  font-size: 1.2rem;
 }
 .nav-item li a:hover {
   color: var(--color-primary-orange);
@@ -197,7 +198,7 @@ h3 {
   grid-template-areas: 
   "heroes aside"
   "last last";
-  column-gap: .9375rem;
+  column-gap: 1.9375rem;
   row-gap: 1.5625rem;
   padding: 0;
 
@@ -217,11 +218,11 @@ h3 {
 .heroes-content_body {
   flex-direction: column;
   justify-content: space-between;
-  margin: 3.3125rem 0;
+  margin: 3.3125rem 0 0;
 }
 .heroes-content_body > p {
   width: 82%;
-  line-height: 2;
+  line-height: 1.7;
   color: var(--color-neutral-dark-gayish-blue);
   font-weight: var(--font-w-400);
 }
@@ -249,25 +250,36 @@ h3 {
 }
 .roster > h2 {
   font-size: 4rem;
-  margin-top: 0;
+  margin: 0;
   color: var(--color-primary-orange);
 }
 .roster > ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+}
+.roster > ul > li {
+  margin: 2rem 0;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--color-neutral-Off-white);
+}
+.roster > ul :first-child {
+  padding-top: 0;
+}
+.roster > ul :last-child {
+  border-bottom: none;
 }
 .roster > ul > li > a {
   text-decoration: none;
   color: var(--color-neutral-Off-white);
   font-size: 1.7875rem;
   font-weight: var(--font-w-700);
+  
 }
 .roster > ul > li > p {
   color: var(--color-neutral-gayish-blue);
-  border-bottom: 1px solid var(--color-neutral-Off-white);
-  margin: 0;
-  padding: .9375rem 0;
+  font-size: 1.3258rem;
 }
 .lasts-section {
   grid-area: last;
