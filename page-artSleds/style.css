@@ -192,7 +192,7 @@ h3 {
 
 .main {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr 1fr;
   grid-template-areas: 
   "heroes aside"
@@ -207,6 +207,7 @@ h3 {
 }
 .heroes-content {
   display: flex;
+  gap: 4rem;
 }
 .heroes-content > h1 {
   font-size: 5rem;
@@ -214,7 +215,28 @@ h3 {
   margin: 3.3125rem 0;
 }
 .heroes-content_body {
+  flex-direction: column;
+  justify-content: space-between;
   margin: 3.3125rem 0;
+}
+.heroes-content_body > p {
+  width: 82%;
+  line-height: 2;
+  color: var(--color-neutral-dark-gayish-blue);
+  font-weight: var(--font-w-400);
+}
+.heroes-content_body > .button {
+  border: none;
+  background-color: var(--color-neutral-dark-blue);
+  color: var(--color-neutral-Off-white);
+  text-transform: uppercase;
+  font-weight: var(--font-w-800);
+  letter-spacing: 4px;
+  padding: 1.4rem;
+  width: 47%;
+}
+.heroes-content_body > .button:hover {
+  cursor: pointer;
 }
 .aside {
   grid-area: aside;
@@ -223,6 +245,29 @@ h3 {
 .roster {
   background-color: var(--color-neutral-dark-blue);
   color: var(--color-neutral-Off-white);
+  padding: 1.4rem;
+}
+.roster > h2 {
+  font-size: 4rem;
+  margin-top: 0;
+  color: var(--color-primary-orange);
+}
+.roster > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.roster > ul > li > a {
+  text-decoration: none;
+  color: var(--color-neutral-Off-white);
+  font-size: 1.7875rem;
+  font-weight: var(--font-w-700);
+}
+.roster > ul > li > p {
+  color: var(--color-neutral-gayish-blue);
+  border-bottom: 1px solid var(--color-neutral-Off-white);
+  margin: 0;
+  padding: .9375rem 0;
 }
 .lasts-section {
   grid-area: last;
