@@ -159,8 +159,10 @@ body {
 }
 .container {
   max-width: 1440px;
+  /* width: 1440px; */
+  
   margin: 0 auto;
-  padding: 2rem 0rem 1rem;
+  padding: 2rem 1rem 1rem;
 }
 h1,
 h2,
@@ -179,13 +181,10 @@ h3 {
   list-style-type: none;
   gap: 1.375rem;
 }
-.nav-item li {
-}
 .nav-item li a {
   text-decoration: none;
-  font-weight: var(--font-w-400);
   color: var(--color-neutral-dark-gayish-blue);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 .nav-item li a:hover {
   color: var(--color-primary-orange);
@@ -194,14 +193,12 @@ h3 {
 .main {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 2fr .5fr;
   grid-template-areas: 
   "heroes aside"
   "last last";
   column-gap: 1.9375rem;
   row-gap: 1.5625rem;
-  padding: 0;
-
 }
 .heroes-section {
   grid-area: heroes;
@@ -228,7 +225,7 @@ h3 {
 }
 .heroes-content_body > .button {
   border: none;
-  background-color: var(--color-neutral-dark-blue);
+  background-color: var(--color-primary-red);
   color: var(--color-neutral-Off-white);
   text-transform: uppercase;
   font-weight: var(--font-w-800);
@@ -238,6 +235,7 @@ h3 {
 }
 .heroes-content_body > .button:hover {
   cursor: pointer;
+  background-color: var(--color-neutral-dark-blue);
 }
 .aside {
   grid-area: aside;
@@ -277,6 +275,9 @@ h3 {
   font-weight: var(--font-w-700);
   
 }
+.roster > ul > li > a:hover {
+  color: var(--color-primary-orange);
+}
 .roster > ul > li > p {
   color: var(--color-neutral-gayish-blue);
   font-size: 1.3258rem;
@@ -286,4 +287,66 @@ h3 {
 }
 .lasts-item {
   display: inherit;
+}
+.content {
+  margin-left: 2rem;
+}
+.numeral {
+  color: var(--color-primary-red);
+  font-weight: var(--font-w-800);
+  font-size: 3rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+.content > h3 > a {
+  text-decoration: none;
+  color: var(--color-neutral-dark-blue);
+  font-weight: var(--font-w-800);
+  font-size: 1.4rem;
+}
+.content > h3 > a:hover {
+  color: var(--color-primary-red);
+}
+.content > p {
+  width: 80%;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+footer {
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+  }
+  .heroes-content_body > .button {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .heroes-content_body > .button {
+    width: 100%;
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .nav-item {
+    display: none;
+  }
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr .5fr;
+    grid-template-areas: 
+    "heroes"
+    "aside"
+    "last";
+    column-gap: 0;
+    row-gap: 0;
+  }
+  .heroes-content {
+    flex-direction: column;
+  }
+  .heroes-content > h1 {
+    margin: 0;
+  }
 }
