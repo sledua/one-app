@@ -284,6 +284,7 @@ h3 {
 }
 .lasts-section {
   grid-area: last;
+  gap: 0.9375rem;
 }
 .lasts-item {
   display: inherit;
