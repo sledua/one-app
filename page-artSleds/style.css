@@ -330,13 +330,21 @@ footer {
     font-size: 70%;
   }
 }
-@media screen and (max-width: 425px) {
-  .nav-item {
+@media screen and (max-width: 426px) {
+  .nav > .nav-item {
     display: none;
   }
+  .nav-icon {
+    order: 1;
+  
+  }
+  .nav-mobile > .nav-item {
+    display: none;
+  }
+  
   .main {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr .5fr;
+    grid-template-rows: .8fr 1fr .5fr;
     grid-template-areas: 
     "heroes"
     "aside"
@@ -346,8 +354,21 @@ footer {
   }
   .heroes-content {
     flex-direction: column;
+    gap: 0;
   }
   .heroes-content > h1 {
     margin: 0;
+    font-size: 3.2rem;
+  }
+  .heroes-content_body {
+    margin: 0;
+  }
+  .roster > ul > li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .lasts-section {
+    margin-top: 2rem;
+    flex-direction: column;
   }
 }
